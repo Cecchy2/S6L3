@@ -8,18 +8,111 @@ body {
   margin: 0;
 }
 
-.btn1 {
-  background-color: #0e6cff;
+.padding-block-sm {
+  padding-block: 0.5rem;
 }
 
-.btn2 {
-  background-color: #ff8700;
+.margin-block-sm {
+  margin-block: 0.5rem;
 }
 
-.btn3 {
-  background-color: #4caf50;
+.padding-block-normal {
+  padding-block: 1rem;
 }
 
+.margin-block-normal {
+  margin-block: 1rem;
+}
+
+.padding-block-md {
+  padding-block: 1.5rem;
+}
+
+.margin-block-md {
+  margin-block: 1.5rem;
+}
+
+.padding-block-lg {
+  padding-block: 2rem;
+}
+
+.margin-block-lg {
+  margin-block: 2rem;
+}
+
+.padding-block-xl {
+  padding-block: 3rem;
+}
+
+.margin-block-xl {
+  margin-block: 3rem;
+}
+
+.padding-block-xxl {
+  padding-block: 4rem;
+}
+
+.margin-block-xxl {
+  margin-block: 4rem;
+}
+
+.padding-inline-sm {
+  padding-inline: 0.5rem;
+}
+
+.margin-inline-sm {
+  margin-inline: 0.5rem;
+}
+
+.padding-inline-normal {
+  padding-inline: 1rem;
+}
+
+.margin-inline-normal {
+  margin-inline: 1rem;
+}
+
+.padding-inline-md {
+  padding-inline: 1.5rem;
+}
+
+.margin-inline-md {
+  margin-inline: 1.5rem;
+}
+
+.padding-inline-lg {
+  padding-inline: 2rem;
+}
+
+.margin-inline-lg {
+  margin-inline: 2rem;
+}
+
+.padding-inline-xl {
+  padding-inline: 3rem;
+}
+
+.margin-inline-xl {
+  margin-inline: 3rem;
+}
+
+.padding-inline-xxl {
+  padding-inline: 4rem;
+}
+
+.margin-inline-xxl {
+  margin-inline: 4rem;
+}
+
+/* .btn1{
+    background-color: $blu-color;
+}
+.btn2{
+    background-color: $orange-color;
+}
+.btn3{
+    background-color: $green-color;
+} */
 .btn-container {
   display: flex;
   justify-content: center;
@@ -33,15 +126,15 @@ body {
   font-size: 1.2rem;
 }
 
-.btn blu {
+.btn-blu {
   background-color: #0e6cff;
 }
 
-.btn orange {
+.btn-orange {
   background-color: #ff8700;
 }
 
-.btn green {
+.btn-green {
   background-color: #4caf50;
 }
 

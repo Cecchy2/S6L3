@@ -1,4 +1,4 @@
-.btn1{
+/* .btn1{
     background-color: $blu-color;
 }
 .btn2{
@@ -6,7 +6,7 @@
 }
 .btn3{
     background-color: $green-color;
-}
+} */
 .btn-container{
     display: flex;
     justify-content: center;
@@ -26,7 +26,7 @@ $colorListHex: (
 );
 
 @each $key, $value in $colorListHex {
-    .btn #{$key} {
+    .btn-#{$key} {
         background-color: $value;
     }
 }

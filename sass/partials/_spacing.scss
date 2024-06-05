@@ -4,43 +4,18 @@ $spacings: (
   md: 1.5rem,
   lg: 2rem,
   xl: 3rem,
-  xxl: 4rem
+  xxl: 4rem,
 );
 
+$list-direction: block, inline;
 
-@@mixin generate-padding-block-classes {
-    @each $size, $value in $spacings {
-      .padding-block-#{$size} {
-        padding-block: #{$value};
-      }
+@each $direction in $list-direction {
+  @each $size, $value in $spacings {
+    .padding-#{$direction}-#{$size} {
+      padding-#{$direction}: #{$value};
+    }
+    .margin-#{$direction}-#{$size} {
+      margin-#{$direction}: #{$value};
     }
   }
-  
-  @mixin generate-padding-inline-classes {
-    @each $size, $value in $spacings {
-      .padding-inline-#{$size} {
-        padding-inline: #{$value};
-      }
-    }
-  }
-
-  @mixin generate-margin-block-classes {
-    @each $size, $value in $spacings {
-      .margin-block-#{$size} {
-        margin-block: #{$value};
-      }
-    }
-  }
-  
-  @mixin generate-margin-inline-classes {
-    @each $size, $value in $spacings {
-      .margin-inline-#{$size} {
-        margin-inline: #{$value};
-      }
-    }
-  }
-
-  @include generate-padding-block-classes;
-  @include generate-padding-inline-classes;
-  @include generate-margin-block-classes;
-  @include generate-margin-inline-classes;
+}
