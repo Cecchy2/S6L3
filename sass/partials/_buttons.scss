@@ -1,0 +1,32 @@
+.btn1{
+    background-color: $blu-color;
+}
+.btn2{
+    background-color: $orange-color;
+}
+.btn3{
+    background-color: $green-color;
+}
+.btn-container{
+    display: flex;
+    justify-content: center;
+}
+.btn{
+    width: 150px;
+    height: 50px;
+    margin-inline: 5px;
+    border-radius: 10px;
+    font-size: $size-3;
+
+}
+$colorListHex: (
+    blu:#0e6cff,
+    orange:#ff8700,
+    green:#4caf50
+);
+
+@each $key, $value in $colorListHex {
+    .btn #{$key} {
+        background-color: $value;
+    }
+}

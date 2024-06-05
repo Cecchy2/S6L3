@@ -1,0 +1,7 @@
+@mixin title-big ($sans-serif,$size-5){
+    font: {
+        family: $sans-serif;
+        size: $size-5;
+        weight: bold;
+        };
+}
