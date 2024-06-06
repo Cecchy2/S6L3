@@ -140,14 +140,17 @@ body {
 
 @keyframes fadeIn {
   0% {
+    transform: translateY(-100%);
     opacity: 0;
   }
   100% {
+    transform: translateY(0);
     opacity: 1;
   }
 }
 .fade-in {
-  animation: fadeIn 2s ease-in;
+  animation: fadeIn 2s ease-out;
+  overflow: hidden;
 }
 
 body {
@@ -173,6 +176,18 @@ ul li {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 1.6rem;
   font-weight: bold;
+}
+
+section {
+  overflow: hidden;
+}
+
+article {
+  overflow: hidden;
+}
+
+.btn-container {
+  overflow: hidden;
 }
 
 .headline h1 {

@@ -7,71 +7,75 @@
 @import "./partials/animations";
 @import "./partials/mixin";
 
-
 body {
-    margin: size-0;
+  margin: size-0;
 }
-.logo{
-    width: 70px;
-    
-
+.logo {
+  width: 70px;
 }
 
-nav{
-    display: flex;
-    justify-content: space-between;
-    margin-inline: 10%;
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin-inline: 10%;
 }
-ul{
-    display: flex;
-    list-style: none;
-    li{
-        margin-inline: 10px;
-        font: {
-        family: $sans-serif;
-        size: $size-4;
-        weight: bold;
-        };
-
-    }
-}
-.headline h1{
-    @include title-big ($sans-serif,$size-5)
-}
-.headline p{
+ul {
+  display: flex;
+  list-style: none;
+  li {
+    margin-inline: 10px;
     font: {
-        family: $sans-serif;
+      family: $sans-serif;
+      size: $size-4;
+      weight: bold;
+    }
+  }
+}
+section {
+  overflow: hidden;
+}
+article {
+  overflow: hidden;
+}
+.btn-container {
+  overflow: hidden;
+}
+
+.headline h1 {
+  @include title-big($sans-serif, $size-5);
+}
+.headline p {
+  font: {
+    family: $sans-serif;
     size: $size-3;
     weight: normal;
-    };
+  }
 }
-header{
-    display: flex;
-    background-color: $hero-bg;
-    color: $text-color;
-    min-height: 500px;
+header {
+  display: flex;
+  background-color: $hero-bg;
+  color: $text-color;
+  min-height: 500px;
 }
-.headline{
-    max-width: 500px;
-    
+.headline {
+  max-width: 500px;
 }
-.libraryImg{
-    width: 90vw;
-    padding-block: 5vh;
-    height: 75vh;
-    object-fit: cover;
-    border-radius: 50px;
-    margin-left: 10px;
+.libraryImg {
+  width: 90vw;
+  padding-block: 5vh;
+  height: 75vh;
+  object-fit: cover;
+  border-radius: 50px;
+  margin-left: 10px;
 }
-    
-article{
-    display: flex;
-    max-width: 100vw;
-    
+
+article {
+  display: flex;
+  max-width: 100vw;
 }
-.photo{
-    max-width: 100%;
-    padding-inline: 5px;
-    object-fit: cover;
-    margin-block: 10px;
+.photo {
+  max-width: 100%;
+  padding-inline: 5px;
+  object-fit: cover;
+  margin-block: 10px;
 }
