@@ -104,15 +104,6 @@ body {
   margin-inline: 4rem;
 }
 
-/* .btn1{
-    background-color: $blu-color;
-}
-.btn2{
-    background-color: $orange-color;
-}
-.btn3{
-    background-color: $green-color;
-} */
 .btn-container {
   display: flex;
   justify-content: center;
